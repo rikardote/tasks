@@ -24,13 +24,18 @@
       </div>
     </div>
 
-{!! $tasks->render() !!}		
-  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    <a href=# class="btn-floating btn-large waves-effect waves-light red">
-      <i class="large material-icons">add</i>
-    </a>
-    
-  </div>
+	{!! $tasks->render() !!}		
+  
+	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+	    <a data-url="{{ route('tasks.create') }}" 
+	    	class="load-form-modal btn-floating btn-large waves-effect waves-light red" 
+	    	data-toggle ="modal" 
+	    	data-target='#form-modal'>
+	    	<i class="large material-icons">add</i>
+		</a> 
+	</div>
+
+	 @include('partials.form-modal', ['title'=>'Nueva Tarea'])
 	
 @endsection
 

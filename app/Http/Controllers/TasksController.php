@@ -18,7 +18,7 @@ class TasksController extends Controller
      */
     public function index()
     {
-        $tasks = Task::paginate(10);
+        $tasks = Task::orderBy('created_at', 'ASC')->paginate(10);
         return view('tasks.index')->with('tasks', $tasks);
     }
 
@@ -29,7 +29,7 @@ class TasksController extends Controller
      */
     public function create()
     {
-        //
+        return view('tasks.create');
     }
 
     /**
