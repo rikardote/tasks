@@ -8,14 +8,16 @@
 			<ul class="collapsible popout" data-collapsible="accordion">
 				<li>
 					<div class="collapsible-header">
-						<a href = '#modal1' class = 'edit modal-trigger'  data-link = '/tasks/{{$task->id}}/edit'><i class="material-icons">done</i></a>
-						<a href = '#modal1' class = 'delete red  modal-trigger' data-link = '/tasks/{{$task->id}}/delete'><i class="material-icons">delete</i></a>
+						
 						{{$task->task}}
 						
 					</div>
 					<div class="collapsible-body">
 						<p>{{$task->description}}</p>
-
+						<div class="right-align">
+							<a href = '#modal1' class = 'edit modal-trigger'  data-link = '/tasks/{{$task->id}}/edit'><i class="material-icons">done</i></a>
+							<a href = '#modal1' class = 'delete modal-trigger' data-link = '/tasks/{{$task->id}}/delete'><i class="material-icons">delete</i></a>
+						</div>
 					</div>
 				</li>
 		   	</ul>
