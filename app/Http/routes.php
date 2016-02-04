@@ -11,10 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::resource('tasks', 'TasksController');
+Route::get('/', 'TasksController@index');
+    
+
+//Route::resource('tasks', 'TasksController');
+Route::get('tasks','TasksController@index');
+Route::get('tasks/{id}/edit','TasksController@edit');
+Route::post('tasks/{id}/update','TasksController@update');
+Route::get('tasks/create','TasksController@create');
+Route::post('tasks/store','TasksController@store');
+Route::get('tasks/{id}/show','TasksController@show');
+Route::get('tasks/{id}/delete','TasksController@delete');
+Route::get('tasks/{id}/destroy','TasksController@destroy');
+
+
 
 /*
 |--------------------------------------------------------------------------

@@ -8,8 +8,8 @@
 			<ul class="collapsible popout" data-collapsible="accordion">
 				<li>
 					<div class="collapsible-header">
-						<a href="#"><i class="material-icons">done</i></a>
-						<i class="material-icons">not_interested</i>
+						<a href = '#modal1' class = 'edit modal-trigger'  data-link = '/tasks/{{$task->id}}/edit'><i class="material-icons">done</i></a>
+						<a href = '#modal1' class = 'delete red  modal-trigger' data-link = '/tasks/{{$task->id}}/delete'><i class="material-icons">delete</i></a>
 						{{$task->task}}
 						
 					</div>
@@ -23,20 +23,18 @@
        
       </div>
     </div>
-
-	{!! $tasks->render() !!}		
+	{!! (new Landish\Pagination\Materialize($tasks))->render() !!}
+	
   
-	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-	    <a data-url="{{ route('tasks.create') }}" 
-	    	class="load-form-modal btn-floating btn-large waves-effect waves-light red" 
-	    	data-toggle ="modal" 
-	    	data-target='#form-modal'>
+	<div class="fixed-action-btn" >
+	    <a  href = '#modal1' 
+	    	class="create btn-floating btn-large waves-effect waves-light red modal-trigger" 
+	    	data-link = '/tasks/create'>
 	    	<i class="large material-icons">add</i>
 		</a> 
 	</div>
-
-	 @include('partials.form-modal', ['title'=>'Nueva Tarea'])
 	
+		
 @endsection
 
 @section('js')

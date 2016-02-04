@@ -4,9 +4,73 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ea1fee525914154e6d6bbf071697b5a1",
-    "content-hash": "8b1485987e7c5949da82435d403e52e8",
+    "hash": "6063ef8a328015036d26165ddbc15b51",
+    "content-hash": "82bd301d183563be893881502c77067e",
     "packages": [
+        {
+            "name": "amranidev/ajaxis",
+            "version": "v2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amranidev/ajaxis.git",
+                "reference": "9ea6f6c8cf2f85b7314c5a8171a1770adafeea99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amranidev/ajaxis/zipball/9ea6f6c8cf2f85b7314c5a8171a1770adafeea99",
+                "reference": "9ea6f6c8cf2f85b7314c5a8171a1770adafeea99",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.1",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Amranidev\\Ajaxis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Amrani Houssain",
+                    "email": "amranidev@gmail.com"
+                }
+            ],
+            "description": "To manage your crud in laravel 5.1",
+            "homepage": "http://github.com/amranidev/ajaxis",
+            "keywords": [
+                "Ajaxis",
+                "Amrani Houssain",
+                "Laravel ajax get",
+                "ajax",
+                "amranidev",
+                "amrnaihoussain",
+                "files",
+                "framework",
+                "laravel",
+                "laravel ajax modal",
+                "laravel ajax post",
+                "laravel ajax reqeust",
+                "laravel ajax token",
+                "laravel bootstrap",
+                "laravel materialize",
+                "laravel modals"
+            ],
+            "time": "2016-01-03 22:10:53"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "3.0.0",
@@ -305,6 +369,47 @@
                 "tokenizer"
             ],
             "time": "2015-12-05 17:17:57"
+        },
+        {
+            "name": "landish/pagination",
+            "version": "1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Landish/Pagination.git",
+                "reference": "4a18a861923ff2a4d73350411f05dfbe2ab1a205"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Landish/Pagination/zipball/4a18a861923ff2a4d73350411f05dfbe2ab1a205",
+                "reference": "4a18a861923ff2a4d73350411f05dfbe2ab1a205",
+                "shasum": ""
+            },
+            "require-dev": {
+                "illuminate/pagination": "~5.0",
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Landish\\Pagination\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lado Lomidze",
+                    "email": "lado.lomidze@gmail.com"
+                }
+            ],
+            "description": "Laravel 5 Custom Pagination Presenter",
+            "keywords": [
+                "laravel",
+                "pagination"
+            ],
+            "time": "2015-07-01 11:57:57"
         },
         {
             "name": "laravel/framework",
